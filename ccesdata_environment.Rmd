@@ -175,11 +175,6 @@ party_age_groups <- three_waves %>%
   summarise(env_mean = weighted.mean(env_scale, na.rm = T, w = wt))
 ```
 
-### Look at results in a table
-```{r}
-party_age_groups
-```
-
 
 ```{r}
 step2 <- ggplot(party_age_groups, aes(x = age_groups, y = env_mean, col = party)) +

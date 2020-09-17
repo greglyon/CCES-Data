@@ -22,7 +22,7 @@ While the media often use a combination of anecdotes, quotes, and snippets from 
 
 In this post, I will walk you through a short exploratory data analysis---everything from cleaning the data to visualizing the results with a nice clean plot---using R and CCES data. We'll see how to clean data, merge multiple datasets, conduct subgroup analyses, and how to present the findings in a clear and appealing way.
 
-All the code used for the analysis is available on this page. The CCES datasets are publicly available and can be downloaded at the survey's Dataverse page found [here](https://cces.gov.harvard.edu/data).
+All the code used for the analysis is available on this page. The CCES datasets are publicly available and can be downloaded at the survey's Dataverse page found <a href="https://cces.gov.harvard.edu/data" target="_blank">here</a>.
 
 
 ## Workflow
@@ -32,7 +32,7 @@ There are several data analysis "workflows" out there, such as CRISPR-DM and SEM
 
 ## Import
 
-In this analysis, we will use the CCES [2014](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/XFXJVY), [2016](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/GDF6Z0), and [2018](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/ZSBZ7K) data (click the years to go to the download pages). Each of these datasets contains the same four questions about environmental policy that we will use in this analysis. Save the data in your working directory.
+In this analysis, we will use the CCES <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/XFXJVY" target="_blank">2014</a>, <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/GDF6Z0" target="_blank">2016</a>, and <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/ZSBZ7K" target="_blank">2018</a> data (click the years to go to the download pages). Each of these datasets contains the same four questions about environmental policy that we will use in this analysis. Save the data in your working directory.
 
 First, we are going to load three packages. Second, we will use the `read_dta` function from the haven package to import the three waves of CCES data. 
 

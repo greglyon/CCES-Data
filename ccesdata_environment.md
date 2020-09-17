@@ -28,15 +28,13 @@ All the code used for the analysis is available on this page. The CCES datasets 
 ## Workflow
 
 
-There are several data analysis "workflows" out there, such as CRISPR-DM and SEMMA[^1]. However, a concise model was introduced by Hadley Wickham and Garrett Grolemund in their book, [R for Data Science](https://r4ds.had.co.nz/introduction.html). I'll use their method and focus on five main steps: import, tidy (or clean), transform, visualize, and communicate. In their model, transform, visualize, and model are iterative processes that expand our understanding of a given phenomenon. We won't be modeling in this post but the process is the same.
+There are several data analysis "workflows" out there, such as CRISPR-DM and SEMMA (Cross-Industry Standard Process for Data Mining and Sample, Explore, Modify, Model, Assess). However, a concise model was introduced by Hadley Wickham and Garrett Grolemund in their book, <a href="https://r4ds.had.co.nz/introduction.html" target="_blank">R for Data Science</a>. I'll use their method and focus on five main steps: import, tidy (or clean), transform, visualize, and communicate. In their model, transform, visualize, and model are iterative processes that expand our understanding of a given phenomenon. We won't be modeling in this post but the process is the same.
 
 ## Import
 
 In this analysis, we will use the CCES [2014](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/XFXJVY), [2016](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/GDF6Z0), and [2018](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/ZSBZ7K) data (click the years to go to the download pages). Each of these datasets contains the same four questions about environmental policy that we will use in this analysis. Save the data in your working directory.
 
 First, we are going to load three packages. Second, we will use the `read_dta` function from the haven package to import the three waves of CCES data. 
-
-[^1]: These stand for Cross-Industry Standard Process for Data Mining (CRISPR-DM) and Sample, Explore, Modify, Model, Assess (SEMMA).
 
 ### Loading packages
 
@@ -178,18 +176,6 @@ party_age_groups <- three_waves %>%
   summarise(env_mean = weighted.mean(env_scale, na.rm = T, w = wt))
 ```
 
-### Look at results in a table
-
-```r
-party_age_groups
-```
-
-<div data-pagedtable="false">
-  <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["party"],"name":[1],"type":["chr"],"align":["left"]},{"label":["age_groups"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["env_mean"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"Democrats","2":"1","3":"3.214756"},{"1":"Democrats","2":"2","3":"3.228888"},{"1":"Democrats","2":"3","3":"3.314992"},{"1":"Democrats","2":"4","3":"3.390732"},{"1":"Independents","2":"1","3":"2.618943"},{"1":"Independents","2":"2","3":"2.233727"},{"1":"Independents","2":"3","3":"2.158046"},{"1":"Independents","2":"4","3":"2.036440"},{"1":"Republicans","2":"1","3":"2.030932"},{"1":"Republicans","2":"2","3":"1.557427"},{"1":"Republicans","2":"3","3":"1.343871"},{"1":"Republicans","2":"4","3":"1.267847"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
-
 
 
 ```r
@@ -211,7 +197,7 @@ step2 <- ggplot(party_age_groups, aes(x = age_groups, y = env_mean, col = party)
 step2
 ```
 
-<img src="ccesdata_environment_files/figure-html/unnamed-chunk-12-1.png" style="display: block; margin: auto;" />
+<img src="ccesdata_environment_files/figure-html/unnamed-chunk-11-1.png" style="display: block; margin: auto;" />
 
 
 ### Add labels and adjust colors
@@ -238,7 +224,7 @@ step3 <- ggplot(party_age_groups, aes(x = age_groups, y = env_mean, col = party)
 step3
 ```
 
-<img src="ccesdata_environment_files/figure-html/unnamed-chunk-14-1.png" style="display: block; margin: auto;" />
+<img src="ccesdata_environment_files/figure-html/unnamed-chunk-13-1.png" style="display: block; margin: auto;" />
 
 ### Format text, axes, and title
 
@@ -270,5 +256,5 @@ step4 <- ggplot(party_age_groups, aes(x = age_groups, y = env_mean, col = party)
 step4
 ```
 
-<img src="ccesdata_environment_files/figure-html/unnamed-chunk-16-1.png" style="display: block; margin: auto;" />
+<img src="ccesdata_environment_files/figure-html/unnamed-chunk-15-1.png" style="display: block; margin: auto;" />
 

@@ -72,6 +72,7 @@ Usually (but not always!), the variable name is not completely random. It often 
 
 ![2014 Codebook](find_vars 2014.png){width = 75%}
 
+Cleaning the data is an important step. Below, I use the dplyr package and create a smaller version of each dataset with transformed variables for the analysis. In addition to year, state, and age, a variable called party is created by recoding the seven point party identification (pid7) variable into three categories: Democrats (and independents who are Democratic leaners), Republicans (and leaners), and true independents. We are interested in environmental policy attitudes so we create four indicators in which 1 represents the "pro-environmental" position and then add them together to create an additive scale that ranges from 0 (supported none of the policies) to 4 (supported all four policies). This yields a more reliable measure of environmental attitudes.
 
 ### Clean 2014 data
 

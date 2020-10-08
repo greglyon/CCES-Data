@@ -1,59 +1,24 @@
-# Welcome to CCES Data
+## Welcome to CCES Data
 
 
-Analyze <a href="ccesdata_environment.html" target="_blank">environmental policy attitudes</a> with R. 
 
-# History
+## History
 
 CCES
 
-# Background
+## Background
 
-# Data
+## Datasets
 
-## General election years
+## Data analysis with CCES data: R
 
-## Midterm election years
+Analyze <a href="ccesdata_environment.html" target="_blank">environmental policy attitudes</a> with R. 
 
-## Panel data
+## Data analysis with CCES data: Python
 
-# Data analysis with CCES data
+## Published research using CCES
 
-## Analyzing CCES data in R
-
-## Analyzing CCES data in Python
-
-# Articles published with CCES data by year
-
-### 2008
-
-### 2009
-
-### 2010
-
-### 2009
-
-### 2010
-
-### 2011
-
-### 2012
-
-### 2013
-
-### 2014
-
-### 2015
-
-### 2016
-
-### 2017
-
-### 2018
-
-### 2019
-
-### 2020
+## Media coverage citing CCES
 
 ### Editing
 Use the [editor on GitHub](https://github.com/greglyon/ccesdata/edit/gh-pages/index.md) to maintain and preview the content in Markdown files.

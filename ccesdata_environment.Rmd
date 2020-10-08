@@ -96,7 +96,7 @@ cc14 <- c14 %>%
   dplyr::select(year, state_fips, age, wt, starts_with("env"), party)
 ```
 
-### Clean 2016 data 
+### Clean 2016 data  
 ```{r}
 cc16 <- c16 %>%
   mutate(

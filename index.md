@@ -1,20 +1,21 @@
 ## Welcome to CCES Data
 
 
-
-## History
-
-CCES
-
 ## Background
 
+What is CCES
+
 ## Datasets
+
+2006-2020
 
 ## Data analysis with CCES data: R
 
 Analyze <a href="ccesdata_environment.html" target="_blank">environmental policy attitudes</a> with R. 
 
 ## Data analysis with CCES data: Python
+
+Analyze environmental policy attitudes with Python. 
 
 ## Published research using CCES
 

@@ -1,7 +1,7 @@
 ---
 title: 'Using R and CCES for Data Analysis: Are Young Republicans Pro-Environment?'
 author: "Gregory Lyon"
-date: "9/14/2020"
+date: "{}"
 output: 
   html_document: 
     keep_md: yes
@@ -94,7 +94,7 @@ cc14 <- c14 %>%
   dplyr::select(year, state_fips, age, wt, starts_with("env"), party)
 ```
 
-### Clean 2016 data
+### Clean 2016 data  
 
 ```r
 cc16 <- c16 %>%

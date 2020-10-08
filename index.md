@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/greglyon/ccesdata/edit/gh-
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-Analyze [environmental data](ccesdata_environment.html) with R. 
+Analyze <a href="ccesdata_environment.html" target="_blank">environmental policy attitudes</a> with R. 
 
 ### Markdown
 
